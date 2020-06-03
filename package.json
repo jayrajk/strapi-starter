@@ -1,0 +1,41 @@
+{
+  "name": "strapi-starter",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "knex": "<0.20.0",
+    "mysql": "latest",
+    "nodemailer": "6.4.8",
+    "strapi": "3.0.1",
+    "strapi-admin": "3.0.1",
+    "strapi-connector-bookshelf": "3.0.1",
+    "strapi-plugin-content-manager": "3.0.1",
+    "strapi-plugin-content-type-builder": "3.0.1",
+    "strapi-plugin-documentation": "^3.0.1",
+    "strapi-plugin-email": "3.0.1",
+    "strapi-plugin-graphql": "^3.0.1",
+    "strapi-plugin-upload": "3.0.1",
+    "strapi-plugin-users-permissions": "3.0.1",
+    "strapi-utils": "3.0.1"
+  },
+  "author": {
+    "name": "Jayraj Kapadia"
+  },
+  "strapi": {
+    "uuid": "82048380-506c-49c3-b516-7286612ff30e"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

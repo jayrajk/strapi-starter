@@ -1,0 +1,29 @@
+{
+  "collectionName": "multilingual",
+  "info": {
+    "name": "multilingual",
+    "icon": "bullhorn"
+  },
+  "options": {},
+  "attributes": {
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "DE",
+        "ES"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "float"
+    }
+  }
+}

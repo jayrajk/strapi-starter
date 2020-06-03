@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Activities",
+  "info": {
+    "name": "Activities"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "price": {
+      "type": "float",
+      "default": 0
+    },
+    "description": {
+      "type": "text"
+    },
+    "different_languages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "multilingual.multilingual"
+    }
+  }
+}
