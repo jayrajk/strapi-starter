@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
 });
 
 module.exports = {
-  send: (from, to, subject, text) => {
+  send: (from, to, subject, text) => { // this service will send email
     // Setup e-mail data.
     const options = {
       from,

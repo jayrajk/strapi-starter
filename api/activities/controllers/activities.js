@@ -2,7 +2,7 @@
 const { parseMultipartData, sanitizeEntity } = require('strapi-utils')
 
 module.exports = {
-  async create(ctx) {
+  async create(ctx) { // this controller will create activity and will send email automatic after creation of activity
     let entity
     if (ctx.is('multipart')) {
       const { data, files } = parseMultipartData(ctx);
@@ -23,7 +23,7 @@ module.exports = {
 
     return entity
   },
-  activities_price: async ctx => {
+  activities_price: async ctx => { // custom controller which will decrease the price of all activities using discount
     if (ctx.request && ctx.request.body && !ctx.request.body.discount) {
       return ctx.send([])
     }
